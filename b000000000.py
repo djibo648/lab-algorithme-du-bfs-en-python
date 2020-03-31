@@ -25,5 +25,15 @@ def search(name):
    print( len(eleves.values()) )
    return False
 
+from collections import deque
+
+def search(name):
+   search_queue = deque()
+   search_queue += eleves[name]
+   print( len(search_queue) )
+   return False
+
 if __name__== "__main__":
   search("Boris")
+
+
